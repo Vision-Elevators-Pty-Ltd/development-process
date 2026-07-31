@@ -1,122 +1,184 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/development-process/assets/index-BgLVlGeA.css" data-rsc-css-href="/development-process/assets/index-BgLVlGeA.css" data-precedence="vite-rsc/importer-resources"/><link rel="modulepreload" href="/development-process/assets/layout-segment-context-Cw0386ZB.js" crossorigin=""/><link rel="modulepreload" href="/development-process/assets/rolldown-runtime-S-ySWqyJ.js" crossorigin=""/><link rel="modulepreload" href="/development-process/assets/index-DvlR2f66.js" crossorigin=""/><link rel="modulepreload" href="/development-process/assets/framework-DjPHiq1u.js" crossorigin=""/><link rel="modulepreload" href="/development-process/assets/page-CRowXWis.js" crossorigin=""/><title>ElevateTech Development Process</title><meta name="description" content="An interactive guide to ElevateTech development, CI, staging and production delivery."/><meta property="og:title" content="ElevateTech Development Process"/><meta property="og:description" content="An interactive guide to ElevateTech development, CI, staging and production delivery."/><meta property="og:type" content="website"/><meta property="og:image" content="https://vision-elevators-pty-ltd.github.io/development-process/og.png"/><meta property="og:image:width" content="1730"/><meta property="og:image:height" content="909"/><meta property="og:image:alt" content="ElevateTech Development Process — from workbench to customer release"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="ElevateTech Development Process"/><meta name="twitter:description" content="An interactive guide to ElevateTech development, CI, staging and production delivery."/><meta name="twitter:image" content="https://vision-elevators-pty-ltd.github.io/development-process/og.png"/><link rel="shortcut icon" href="https://vision-elevators-pty-ltd.github.io/development-process/favicon.svg"/><link rel="icon" href="https://vision-elevators-pty-ltd.github.io/development-process/favicon.svg"/><script>self.__VINEXT_RSC_PARAMS__={}</script><script>self.__VINEXT_RSC_NAV__={"pathname":"/","searchParams":[]}</script><link rel="modulepreload" href="/development-process/assets/index-DvlR2f66.js" />
-<link rel="preload" href="/development-process/assets/_vinext_fonts/geist-8ac0455e797f/geist-ff2310f5.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/development-process/assets/_vinext_fonts/geist-8ac0455e797f/geist-875ccdd4.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/development-process/assets/_vinext_fonts/geist-8ac0455e797f/geist-52306abf.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/development-process/assets/_vinext_fonts/geist-8ac0455e797f/geist-001175b1.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/development-process/assets/_vinext_fonts/geist-8ac0455e797f/geist-98bbbccb.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/development-process/assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-f6b33328.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/development-process/assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-44e03052.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/development-process/assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-0638449e.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/development-process/assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-971fb274.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/development-process/assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-44745446.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/development-process/assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-013b2f2f.woff2" as="font" type="font/woff2" crossorigin />
-<style data-vinext-fonts>/* cyrillic-ext */
-@font-face {
-  font-family: 'Geist';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/assets/_vinext_fonts/geist-8ac0455e797f/geist-ff2310f5.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Geist';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/assets/_vinext_fonts/geist-8ac0455e797f/geist-875ccdd4.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Geist';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/assets/_vinext_fonts/geist-8ac0455e797f/geist-52306abf.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Geist';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/assets/_vinext_fonts/geist-8ac0455e797f/geist-001175b1.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Geist';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/assets/_vinext_fonts/geist-8ac0455e797f/geist-98bbbccb.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-.__font_geist_0tvmz3h { font-family: 'Geist', sans-serif; }
-
-.__variable_geist_0tvmz3h { --font-geist-sans: 'Geist', sans-serif; }
-
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Geist Mono';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-f6b33328.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Geist Mono';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-44e03052.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* symbols2 */
-@font-face {
-  font-family: 'Geist Mono';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-0638449e.woff2) format('woff2');
-  unicode-range: U+2000-2001, U+2004-2008, U+200A, U+23B8-23BD, U+2500-259F;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Geist Mono';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-971fb274.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Geist Mono';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-44745446.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Geist Mono';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(/assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-013b2f2f.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-.__font_geist_mono_1diim1n { font-family: 'Geist Mono', sans-serif; }
-
-.__variable_geist_mono_1diim1n { --font-geist-mono: 'Geist Mono', sans-serif; }
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>How code ships — ElevateTech &amp; OPS App</title>
+<style>
+  :root{
+    --bg:#0e1116;--panel:#161b22;--line:#2d333c;--text:#e6e8eb;--dim:#9aa4b2;
+    --auto:#3fb950;--human:#f0883e;--gate:#539bf5;--prod:#e5534b;--chip:#21262d;
+  }
+  @media (prefers-color-scheme: light){
+    :root{--bg:#f6f8fa;--panel:#ffffff;--line:#d0d7de;--text:#1f2328;--dim:#57606a;--chip:#eaeef2}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+  main{max-width:1080px;margin:0 auto;padding:24px 16px 64px}
+  h1{font-size:1.7rem;margin:.2rem 0 0}
+  h2{font-size:1.15rem;margin:2.2rem 0 .6rem;border-bottom:1px solid var(--line);padding-bottom:.35rem}
+  p.lead{color:var(--dim);margin:.3rem 0 0}
+  .diagram{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px;overflow-x:auto;margin-top:14px}
+  svg{display:block;min-width:900px;width:100%;height:auto;color:var(--text)}
+  .legend{display:flex;gap:18px;flex-wrap:wrap;color:var(--dim);font-size:.85rem;margin:8px 4px 0}
+  .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin-top:12px}
+  .card{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--human);border-radius:10px;padding:12px 14px}
+  .card b{display:block;margin-bottom:2px}
+  .card small{color:var(--dim)}
+  .stopnum{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--human);color:#111;font-weight:700;font-size:.85rem;margin-right:8px}
+  table{border-collapse:collapse;width:100%;margin-top:10px;font-size:.92rem}
+  th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+  th{background:var(--chip)}
+  code{background:var(--chip);padding:1px 6px;border-radius:6px;font-size:.86em}
+  .gates{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:12px}
+  .gate{background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--gate);border-radius:10px;padding:12px 14px}
+  .gate b{display:block}
+  .gate small{color:var(--dim)}
+  .note{background:var(--panel);border:1px dashed var(--line);border-radius:10px;padding:10px 14px;color:var(--dim);font-size:.9rem;margin-top:10px}
+  footer{color:var(--dim);font-size:.8rem;margin-top:48px;border-top:1px solid var(--line);padding-top:12px}
 </style>
-</head><body class="__variable_geist_0tvmz3h __variable_geist_mono_1diim1n"><main><header class="hero"><div class="eyebrow">ELEVATETECH ENGINEERING</div><h1>Eight parallel tasks. One safe release.</h1><p>See how isolated Development work converges into combined Staging testing and one controlled Production promotion.</p><div class="logic-key" aria-label="Flow symbol key"><span><i class="mode-dot human"></i>Human action</span><span><i class="mode-dot automatic"></i>Automatic action</span><span><i class="mode-dot decision"></i>Decision / hard gate</span></div></header><section class="section journey-section" aria-labelledby="journey-heading"><div class="section-heading"><div><span class="section-number">01</span><h2 id="journey-heading">Select the process</h2></div><p>Read every route from START to FINISH.</p></div><div class="journey-tabs" role="group" aria-label="Delivery journey"><button class="active" aria-pressed="true">Complete release</button><button class="" aria-pressed="false">Develop and check</button><button class="" aria-pressed="false">Merge to staging</button><button class="" aria-pressed="false">Promote production</button></div><div class="flow-boundary start-boundary"><span>START</span><div><strong>A release owner defines a set of up to eight independent tasks and the acceptance criteria for the combined release.</strong><small class="journey-state controlled">TARGET OPERATING MODEL</small></div></div><div class="flow-rule"><span>NON-NEGOTIABLE RULE</span><p>Development happens in parallel, integration happens on Staging, and Production receives one combined release. Staging does not promote PRs individually—it proves and promotes the final release artifact that contains them.</p></div><ol class="process-flow" aria-label="Complete release exact process steps"><li class="process-step mode-human"><div class="step-rail" aria-hidden="true"><span>01</span><i></i></div><article><div class="step-heading"><div><span class="mode-label human">HUMAN</span><strong>Release owner</strong></div><span class="system-name">Release scope</span></div><p class="step-action">Define the intended tasks, owners, dependencies and combined acceptance criteria.</p><div class="step-output"><span>OUTPUT</span><p>A controlled release batch containing up to eight independently deliverable tasks.</p></div></article></li><li class="process-step mode-human"><div class="step-rail" aria-hidden="true"><span>02</span><i></i></div><article><div class="step-heading"><div><span class="mode-label human">HUMAN</span><strong>Eight engineers / agents</strong></div><span class="system-name">Eight branches + worktrees</span></div><p class="step-action">Work on the tasks concurrently. Every task remains isolated from the other working copies.</p><div class="parallel-lanes" aria-label="Eight parallel task lanes"><span>Task 1</span><span>Task 2</span><span>Task 3</span><span>Task 4</span><span>Task 5</span><span>Task 6</span><span>Task 7</span><span>Task 8</span></div><div class="step-output"><span>OUTPUT</span><p>Up to eight independent change streams; no shared Development branch is used.</p></div></article></li><li class="process-step mode-automatic"><div class="step-rail" aria-hidden="true"><span>03</span><i></i></div><article><div class="step-heading"><div><span class="mode-label automatic">AUTOMATIC</span><strong>GitHub + CI + Coolify</strong></div><span class="system-name">Draft PRs → Development VPS</span></div><p class="step-action">Each Draft PR opening or branch push independently runs preflight and automatically creates or updates its own Development preview.</p><div class="step-output"><span>OUTPUT</span><p>Up to eight isolated Development URLs, each tied to its own PR number and commit SHA.</p></div></article></li><li class="process-step mode-decision"><div class="step-rail" aria-hidden="true"><span>04</span><i></i></div><article><div class="step-heading"><div><span class="mode-label decision">DECISION</span><strong>Per-PR decision</strong></div><span class="system-name">Development previews</span></div><p class="step-action">Is each engineer satisfied with their deployed task?</p><div class="step-output"><span>OUTPUT</span><p>Each PR advances or loops independently; one failed task does not overwrite another task&#x27;s preview.</p></div><div class="decision-branches"><div class="pass"><span>YES / PASS →</span><p>That engineer marks only that Draft PR Ready for review and continues to Step 5.</p></div><div class="fail"><span>NO / FAIL ↩</span><p>Repair that task&#x27;s branch and push again. Its own preview redeploys; the other seven lanes continue.</p></div></div></article></li><li class="process-step mode-automatic"><div class="step-rail" aria-hidden="true"><span>05</span><i></i></div><article><div class="step-heading"><div><span class="mode-label automatic">AUTOMATIC</span><strong>GitHub + reviewers</strong></div><span class="system-name">Ready PRs + full CI</span></div><p class="step-action">Run the complete required gates and human review separately for every Ready PR.</p><div class="step-output"><span>OUTPUT</span><p>Merge evidence for each exact PR SHA.</p></div></article></li><li class="process-step mode-decision"><div class="step-rail" aria-hidden="true"><span>06</span><i></i></div><article><div class="step-heading"><div><span class="mode-label decision">DECISION</span><strong>Per-PR merge decision</strong></div><span class="system-name">Protected main</span></div><p class="step-action">Is this PR green, approved, current and safe to combine with what has already merged?</p><div class="step-output"><span>OUTPUT</span><p>Individual permission to merge or a return-to-branch loop.</p></div><div class="decision-branches"><div class="pass"><span>YES / PASS →</span><p>Merge that PR into main. The main commit now includes it and all earlier accepted PRs.</p></div><div class="fail"><span>NO / FAIL ↩</span><p>Keep it out of main. Repair and re-review that PR; do not block unrelated Development lanes.</p></div></div></article></li><li class="process-step mode-automatic"><div class="step-rail" aria-hidden="true"><span>07</span><i></i></div><article><div class="step-heading"><div><span class="mode-label automatic">AUTOMATIC</span><strong>GitHub + Coolify</strong></div><span class="system-name">Main → Permanent Staging</span></div><p class="step-action">Every successful merge automatically updates Staging. Staging therefore accumulates PR 1, then PRs 1–2, continuing until the planned accepted set is present.</p><div class="step-output"><span>OUTPUT</span><p>A running integration environment that exposes interactions between the merged changes.</p></div></article></li><li class="process-step mode-decision"><div class="step-rail" aria-hidden="true"><span>08</span><i></i></div><article><div class="step-heading"><div><span class="mode-label decision">DECISION</span><strong>Release decision</strong></div><span class="system-name">Release scope + main</span></div><p class="step-action">Are all PRs intended for this release merged and is the final Staging commit identified?</p><div class="step-output"><span>OUTPUT</span><p>A frozen release candidate boundary.</p></div><div class="decision-branches"><div class="pass"><span>YES / PASS →</span><p>Freeze the final main SHA and continue to Step 9.</p></div><div class="fail"><span>NO / FAIL ↩</span><p>Wait for remaining approved PRs or explicitly remove an unready PR from this release scope; never bypass its gates.</p></div></div></article></li><li class="process-step mode-automatic"><div class="step-rail" aria-hidden="true"><span>09</span><i></i></div><article><div class="step-heading"><div><span class="mode-label automatic">AUTOMATIC</span><strong>Release workflow</strong></div><span class="system-name">Registry + Staging</span></div><p class="step-action">Build and identify one immutable release image for the frozen final SHA, then ensure Staging runs that exact digest.</p><div class="step-output"><span>OUTPUT</span><p>One release candidate containing the complete accepted set of merged PRs.</p></div></article></li><li class="process-step mode-human"><div class="step-rail" aria-hidden="true"><span>10</span><i></i></div><article><div class="step-heading"><div><span class="mode-label human">HUMAN</span><strong>Staging test team</strong></div><span class="system-name">Permanent Staging</span></div><p class="step-action">Perform detailed end-to-end, integration, data, authorization, visual and operational testing on the combined release.</p><div class="step-output"><span>OUTPUT</span><p>Evidence for the whole release, including interactions that isolated Development previews cannot prove.</p></div></article></li><li class="process-step mode-decision"><div class="step-rail" aria-hidden="true"><span>11</span><i></i></div><article><div class="step-heading"><div><span class="mode-label decision">DECISION</span><strong>Staging decision</strong></div><span class="system-name">Combined release evidence</span></div><p class="step-action">Did the complete release pass detailed Staging testing?</p><div class="step-output"><span>OUTPUT</span><p>Promotion eligibility or a contained repair cycle.</p></div><div class="decision-branches"><div class="pass"><span>YES / PASS →</span><p>Nominate this exact image digest for Production and continue to Step 12.</p></div><div class="fail"><span>NO / FAIL ↩</span><p>Stop. Fix through a new branch and PR, merge it, create a new final SHA and repeat combined Staging testing.</p></div></div></article></li><li class="process-step mode-human"><div class="step-rail" aria-hidden="true"><span>12</span><i></i></div><article><div class="step-heading"><div><span class="mode-label human">HUMAN</span><strong>Named approver</strong></div><span class="system-name">Protected production control</span></div><p class="step-action">Review the complete Staging evidence and manually approve the nominated release digest.</p><div class="step-output"><span>OUTPUT</span><p>Recorded authority to promote one exact combined release.</p></div></article></li><li class="process-step mode-automatic"><div class="step-rail" aria-hidden="true"><span>13</span><i></i></div><article><div class="step-heading"><div><span class="mode-label automatic">AUTOMATIC</span><strong>Coolify + monitoring</strong></div><span class="system-name">Production</span></div><p class="step-action">Deploy the same immutable digest without rebuilding; run smoke checks and observe Grafana, Kuma and ITAgent.</p><div class="step-output"><span>OUTPUT</span><p>The combined release is live with health evidence and a last-known-good rollback point.</p></div></article></li><li class="process-step mode-decision"><div class="step-rail" aria-hidden="true"><span>14</span></div><article><div class="step-heading"><div><span class="mode-label decision">DECISION</span><strong>Production decision</strong></div><span class="system-name">Live health evidence</span></div><p class="step-action">Is the combined release healthy during the agreed observation window?</p><div class="step-output"><span>OUTPUT</span><p>Release closure or controlled rollback.</p></div><div class="decision-branches"><div class="pass"><span>YES / PASS →</span><p>Close the release and record its PR list, final SHA, digest, approver and result.</p></div><div class="fail"><span>NO / FAIL ↩</span><p>Roll back the complete release, alert the team and repair through the normal branch-to-Staging path.</p></div></div></article></li></ol><div class="flow-boundary finish-boundary"><span>FINISH</span><strong>Production runs one approved, immutable release containing the accepted PRs; the release record and rollback point are complete.</strong></div></section><section class="section gate-section" aria-labelledby="gates-heading"><div class="section-heading"><div><span class="section-number">02</span><h2 id="gates-heading">Inside the CI inspection step</h2></div><p>Select a gate to see what stops the flow.</p></div><div class="gate-grid"><button class="" aria-pressed="false"><span>01</span><strong>Handoff</strong><small>Check the job card</small></button><button class="active" aria-pressed="true"><span>02</span><strong>Format + lint</strong><small>Workmanship inspection</small></button><button class="" aria-pressed="false"><span>03</span><strong>Typecheck</strong><small>Check every plug and socket</small></button><button class="" aria-pressed="false"><span>04</span><strong>Unit tests</strong><small>Bench-test each component</small></button><button class="" aria-pressed="false"><span>05</span><strong>Authorization</strong><small>Test every access badge</small></button><button class="" aria-pressed="false"><span>06</span><strong>Integration</strong><small>Connect the subsystems</small></button><button class="" aria-pressed="false"><span>07</span><strong>Database safety</strong><small>Protect the logbook</small></button><button class="" aria-pressed="false"><span>08</span><strong>Security</strong><small>Lockout and foreign-object inspection</small></button><button class="" aria-pressed="false"><span>09</span><strong>Visual + journey</strong><small>Operator acceptance test</small></button><button class="" aria-pressed="false"><span>10</span><strong>Deployability</strong><small>Crate the real machine</small></button><button class="" aria-pressed="false"><span>11</span><strong>Staging smoke</strong><small>Switch on the test plant</small></button><button class="" aria-pressed="false"><span>12</span><strong>Production approval</strong><small>Authorised commissioning</small></button></div><div class="gate-answer" aria-live="polite"><span>IF THIS FAILS, THE FLOW STOPS BECAUSE IT FOUND</span><strong>Format + lint</strong><p>Inconsistent formatting, suspicious patterns, dead code and unsafe shortcuts.</p></div></section><section class="section ask-section" aria-labelledby="ask-heading"><div class="section-heading"><div><span class="section-number">03</span><h2 id="ask-heading">Ask the process guide</h2></div><p>Plain answers to common workflow questions.</p></div><div class="question-chips"><button>How do eight PRs become one release?</button><button>Can my branch reach production?</button><button>What triggers Development deployment?</button><button>What happens when a check fails?</button><button>What exactly triggers staging?</button><button>What exactly triggers production?</button><button>Where can I show unfinished work?</button><button>What is the start and finish of a PR?</button></div><form class="ask-form"><label for="process-question">Your question</label><div><input id="process-question" placeholder="For example: what exactly triggers production?" value=""/><button type="submit">Show answer</button></div></form><div class="process-answer" aria-live="polite"><span>GUIDED ANSWER</span><p>Choose a common question or type your own. Answers stay on this page and do not send code, credentials or infrastructure data anywhere.</p></div></section><footer><strong>ElevateTech development process</strong><span>Current architecture · 28 July 2026</span><span>No passwords, tokens, IP addresses or production data are used by this guide.</span></footer></main><script id="_R_">import("/development-process/assets/index-DvlR2f66.js")</script></body></html><script>self.__VINEXT_RSC_CHUNKS__=self.__VINEXT_RSC_CHUNKS__||[];self.__VINEXT_RSC_CHUNKS__.push("2:I[\"8c0f216c4604\",[],\"Children\",1]\n3:I[\"15c18cfaeeff\",[],\"LayoutSegmentProvider\",1]\n4:I[\"8c0f216c4604\",[],\"Slot\",1]\n5:I[\"593f344dc510\",[],\"RedirectBoundary\",1]\n:HL[\"/development-process/assets/index-BgLVlGeA.css\",\"style\"]\n")</script><script>self.__VINEXT_RSC_CHUNKS__=self.__VINEXT_RSC_CHUNKS__||[];self.__VINEXT_RSC_CHUNKS__.push("0:{\"__route\":\"route:/\",\"__interceptionContext\":null,\"__layoutIds\":[\"layout:/\"],\"__rootLayout\":\"/\",\"page:/\":\"$L1\",\"layout:/\":[[[[\"$\",\"link\",\"css:/assets/index-BgLVlGeA.css\",{\"rel\":\"stylesheet\",\"precedence\":\"vite-rsc/importer-resources\",\"href\":\"/development-process/assets/index-BgLVlGeA.css\",\"data-rsc-css-href\":\"/development-process/assets/index-BgLVlGeA.css\"}],\"$undefined\"],[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"className\":\"__variable_geist_0tvmz3h __variable_geist_mono_1diim1n\",\"children\":[\"$\",\"$L2\",null,{}]}]}]],null],\"route:/\":[[[\"$\",\"meta\",null,{\"charSet\":\"utf-8\"}],[[\"$\",\"title\",\"0\",{\"children\":\"ElevateTech Development Process\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"An interactive guide to ElevateTech development, CI, staging and production delivery.\"}],[\"$\",\"meta\",\"2\",{\"property\":\"og:title\",\"content\":\"ElevateTech Development Process\"}],[\"$\",\"meta\",\"3\",{\"property\":\"og:description\",\"content\":\"An interactive guide to ElevateTech development, CI, staging and production delivery.\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"$\",\"meta\",\"5\",{\"property\":\"og:image\",\"content\":\"https://vision-elevators-pty-ltd.github.io/development-process/og.png\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:image:width\",\"content\":\"1730\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:image:height\",\"content\":\"909\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:image:alt\",\"content\":\"ElevateTech Development Process — from workbench to customer release\"}],[\"$\",\"meta\",\"9\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"10\",{\"name\":\"twitter:title\",\"content\":\"ElevateTech Development Process\"}],[\"$\",\"meta\",\"11\",{\"name\":\"twitter:description\",\"content\":\"An interactive guide to ElevateTech development, CI, staging and production delivery.\"}],[\"$\",\"meta\",\"12\",{\"name\":\"twitter:image\",\"content\":\"https://vision-elevators-pty-ltd.github.io/development-process/og.png\"}],[\"$\",\"link\",\"13\",{\"rel\":\"shortcut icon\",\"href\":\"https://vision-elevators-pty-ltd.github.io/development-process/favicon.svg\"}],[\"$\",\"link\",\"14\",{\"rel\":\"icon\",\"href\":\"https://vision-elevators-pty-ltd.github.io/development-process/favicon.svg\"}]],[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]],[\"$\",\"$L3\",null,{\"segmentMap\":{\"children\":[]},\"children\":[\"$\",\"$L4\",null,{\"id\":\"layout:/\",\"parallelSlots\":\"$undefined\",\"children\":[\"$\",\"$L5\",null,{\"children\":[\"$\",\"$L3\",null,{\"segmentMap\":{\"children\":[]},\"children\":[\"$\",\"$L4\",null,{\"id\":\"page:/\"}]}]}]}]}]],\"__layoutFlags\":{\"layout:/\":\"s\"},\"__artifactCompatibility\":{\"schemaVersion\":1,\"graphVersion\":\"app-route-graph:4uhn5s1wvoptc\",\"deploymentVersion\":\"50401669-a3eb-4067-81b3-80d6e4427c1d\",\"appElementsSchemaVersion\":1,\"rscPayloadSchemaVersion\":1,\"rootBoundaryId\":\"/\",\"renderEpoch\":null}}\n6:I[\"6efdf509a785\",[],\"default\",1]\n1:[\"$\",\"$L6\",null,{\"params\":\"$@7\",\"searchParams\":\"$@8\"}]\n7:{}\n8:{}\n")</script><script>self.__VINEXT_RSC_DONE__=true</script>
+</head>
+<body>
+<main>
+  <h1>How code ships</h1>
+  <p class="lead">ElevateTech &amp; OPS App · one pipeline: <b>Dev → Staging → Production</b> · green = automatic, orange = a person decides</p>
+
+  <div class="diagram" aria-label="Delivery pipeline diagram">
+  <svg viewBox="0 0 1320 430" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif">
+    <defs>
+      <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0 0L10 5L0 10z" fill="#9aa4b2"/>
+      </marker>
+    </defs>
+    <text x="14" y="76"  fill="#9aa4b2" font-size="13" font-weight="700">DEV</text>
+    <text x="14" y="216" fill="#9aa4b2" font-size="13" font-weight="700">STAGING</text>
+    <text x="14" y="356" fill="#9aa4b2" font-size="13" font-weight="700">PROD</text>
+    <line x1="70" y1="30" x2="70" y2="410" stroke="#2d333c"/>
+
+    <g>
+      <rect x="90" y="40" width="150" height="66" rx="10" fill="none" stroke="#3fb950" stroke-width="2"/>
+      <text x="165" y="66" text-anchor="middle" fill="currentColor" font-size="14" font-weight="700">git push</text>
+      <text x="165" y="86" text-anchor="middle" fill="#9aa4b2" font-size="12">pre-push ≈ 1 s</text>
+
+      <rect x="290" y="40" width="190" height="66" rx="10" fill="none" stroke="#3fb950" stroke-width="2"/>
+      <text x="385" y="60" text-anchor="middle" fill="currentColor" font-size="14" font-weight="700">Draft PR</text>
+      <text x="385" y="78" text-anchor="middle" fill="#9aa4b2" font-size="12">affected checks run</text>
+      <text x="385" y="94" text-anchor="middle" fill="#9aa4b2" font-size="12">label ⇒ preview env</text>
+
+      <rect x="530" y="40" width="120" height="66" rx="33" fill="#f0883e"/>
+      <text x="590" y="66" text-anchor="middle" fill="#111" font-size="14" font-weight="800">① READY</text>
+      <text x="590" y="86" text-anchor="middle" fill="#4d2c10" font-size="11.5">author decides</text>
+
+      <rect x="700" y="40" width="170" height="66" rx="10" fill="none" stroke="#539bf5" stroke-width="2"/>
+      <text x="785" y="66" text-anchor="middle" fill="currentColor" font-size="14" font-weight="700">Full CI gates</text>
+      <text x="785" y="86" text-anchor="middle" fill="#9aa4b2" font-size="12">see “The gates” below</text>
+
+      <rect x="920" y="40" width="120" height="66" rx="33" fill="#f0883e"/>
+      <text x="980" y="66" text-anchor="middle" fill="#111" font-size="14" font-weight="800">② MERGE</text>
+      <text x="980" y="86" text-anchor="middle" fill="#4d2c10" font-size="11.5">reviewer clicks</text>
+
+      <line x1="240" y1="73" x2="288" y2="73" stroke="#9aa4b2" stroke-width="2" marker-end="url(#a)"/>
+      <line x1="480" y1="73" x2="528" y2="73" stroke="#9aa4b2" stroke-width="2" marker-end="url(#a)"/>
+      <line x1="650" y1="73" x2="698" y2="73" stroke="#9aa4b2" stroke-width="2" marker-end="url(#a)"/>
+      <line x1="870" y1="73" x2="918" y2="73" stroke="#9aa4b2" stroke-width="2" marker-end="url(#a)"/>
+    </g>
+
+    <path d="M 980 106 L 980 140 L 385 140 L 385 176" fill="none" stroke="#9aa4b2" stroke-width="2" marker-end="url(#a)"/>
+
+    <g>
+      <rect x="240" y="180" width="290" height="66" rx="10" fill="none" stroke="#3fb950" stroke-width="2"/>
+      <text x="385" y="202" text-anchor="middle" fill="currentColor" font-size="14" font-weight="700">Build images ONCE</text>
+      <text x="385" y="222" text-anchor="middle" fill="#9aa4b2" font-size="12">digest-pinned release manifest</text>
+      <text x="385" y="238" text-anchor="middle" fill="#9aa4b2" font-size="12">no rebuilds ever again</text>
+
+      <rect x="580" y="180" width="290" height="66" rx="10" fill="none" stroke="#3fb950" stroke-width="2"/>
+      <text x="725" y="202" text-anchor="middle" fill="currentColor" font-size="14" font-weight="700">Staging auto-deploy + certify</text>
+      <text x="725" y="222" text-anchor="middle" fill="#9aa4b2" font-size="12">same images · smoke + full E2E</text>
+      <text x="725" y="238" text-anchor="middle" fill="#9aa4b2" font-size="12">green = promotable</text>
+
+      <rect x="920" y="180" width="150" height="66" rx="33" fill="#f0883e"/>
+      <text x="995" y="202" text-anchor="middle" fill="#111" font-size="14" font-weight="800">③ SIGN-OFF</text>
+      <text x="995" y="222" text-anchor="middle" fill="#4d2c10" font-size="11.5">you test staging</text>
+      <text x="995" y="236" text-anchor="middle" fill="#4d2c10" font-size="11.5">by hand</text>
+
+      <line x1="530" y1="213" x2="578" y2="213" stroke="#9aa4b2" stroke-width="2" marker-end="url(#a)"/>
+      <line x1="870" y1="213" x2="918" y2="213" stroke="#9aa4b2" stroke-width="2" marker-end="url(#a)"/>
+    </g>
+
+    <path d="M 995 246 L 995 280 L 500 280 L 500 316" fill="none" stroke="#9aa4b2" stroke-width="2" marker-end="url(#a)"/>
+
+    <g>
+      <rect x="350" y="320" width="300" height="66" rx="33" fill="#f0883e"/>
+      <text x="500" y="342" text-anchor="middle" fill="#111" font-size="14" font-weight="800">④ PROMOTE (button in GitHub)</text>
+      <text x="500" y="362" text-anchor="middle" fill="#4d2c10" font-size="11.5">ElevateTech: Wade only · OPS App: Nicholas only</text>
+
+      <rect x="710" y="320" width="330" height="66" rx="10" fill="none" stroke="#e5534b" stroke-width="2.5"/>
+      <text x="875" y="342" text-anchor="middle" fill="currentColor" font-size="14" font-weight="700">PRODUCTION</text>
+      <text x="875" y="362" text-anchor="middle" fill="#9aa4b2" font-size="12">the exact certified images · health-verified</text>
+
+      <line x1="650" y1="353" x2="708" y2="353" stroke="#9aa4b2" stroke-width="2" marker-end="url(#a)"/>
+      <text x="678" y="345" text-anchor="middle" fill="#9aa4b2" font-size="11">refuses any</text>
+      <text x="678" y="376" text-anchor="middle" fill="#9aa4b2" font-size="11">uncertified SHA</text>
+    </g>
+  </svg>
+  </div>
+  <div class="legend">
+    <span><span class="dot" style="background:var(--auto)"></span>automatic</span>
+    <span><span class="dot" style="background:var(--human)"></span>a person decides</span>
+    <span><span class="dot" style="background:var(--gate)"></span>CI gates</span>
+    <span><span class="dot" style="background:var(--prod)"></span>production</span>
+  </div>
+
+  <h2>The four human stops — nothing else needs you</h2>
+  <div class="cards">
+    <div class="card"><b><span class="stopnum">1</span>Ready for review</b><small>You (or the agent) flip the draft when the work is done. Blocked automatically while the draft checks are red.</small></div>
+    <div class="card"><b><span class="stopnum">2</span>Merge</b><small>A person clicks merge after review. Nothing merges itself. Merging deploys to <b>staging only</b> — never production.</small></div>
+    <div class="card"><b><span class="stopnum">3</span>Staging sign-off</b><small>Certification runs the automated journeys while you click around staging yourself.</small></div>
+    <div class="card"><b><span class="stopnum">4</span>Promote</b><small>Actions → “Promote Production” → enter the SHA. ElevateTech: <b>Wade</b>. OPS App: <b>Nicholas</b>. Everyone else is refused by name.</small></div>
+  </div>
+
+  <h2>Preview environments — click before you merge</h2>
+  <table>
+    <tr><th></th><th>ElevateTech</th><th>OPS App</th></tr>
+    <tr><td>Get one</td><td colspan="2">Add the <code>development-preview</code> label to your PR</td></tr>
+    <tr><td>URLs</td><td><code>&lt;PR#&gt;-et-admin</code> / <code>-et-store</code> / <code>-et-supplier</code> <code>.elevatetech.biz</code></td><td><code>&lt;PR#&gt;-ops-dev.elevatetech.biz</code></td></tr>
+    <tr><td>Data</td><td colspan="2">Fresh database per PR + synthetic seed. Never production data.</td></tr>
+    <tr><td>Login</td><td>Preview admin credentials (ask Wade)</td><td><code>vision-e2e</code> org test admin</td></tr>
+    <tr><td>Cleanup</td><td colspan="2">Automatic when the PR closes (merging closes it). Parallel PRs never collide — each has its own stack.</td></tr>
+  </table>
+
+  <h2>What the CI gates actually check</h2>
+  <div class="gates">
+    <div class="gate"><b>Correctness</b><small>Typecheck, lint, unit tests — scoped to what your diff touches on drafts, everything on ready.</small></div>
+    <div class="gate"><b>Security</b><small>Secret scan (gitleaks), dependency audit, container scan (trivy), authorization / BOLA tests.</small></div>
+    <div class="gate"><b>Product safety</b><small>Auth invariants &amp; org/branch scoping, database migration diff review, visual regression (OPS, dedicated runner).</small></div>
+    <div class="gate"><b>Deployability</b><small>Compose &amp; environment contracts prove the release can actually deploy before it may merge.</small></div>
+    <div class="gate"><b>Build once</b><small>On merge, images are built a single time and digest-pinned. Staging and production run those exact bytes.</small></div>
+    <div class="gate"><b>Certification</b><small>Staging must pass deploy proofs + smoke + full E2E journeys before a SHA becomes promotable.</small></div>
+  </div>
+  <div class="note">Pre-push on your machine is ~1 second: formatting on changed files, secret scan, contract checks. The heavy work runs in CI on every draft push — and cancels itself when you push again.</div>
+
+  <h2>Environments &amp; URLs</h2>
+  <table>
+    <tr><th>Environment</th><th>ElevateTech</th><th>OPS App</th></tr>
+    <tr><td>Development (per-PR)</td><td><code>&lt;PR#&gt;-et-*.elevatetech.biz</code></td><td><code>&lt;PR#&gt;-ops-dev.elevatetech.biz</code></td></tr>
+    <tr><td>Staging</td><td><code>staging-pim</code> · <code>staging-store</code> · <code>staging-supplier</code> <small>(rolling out — currently <code>pim-test</code> / <code>store-test</code>)</small></td><td><code>staging.elevatetech.biz</code></td></tr>
+    <tr><td>Production</td><td><code>pim</code> · <code>store</code> · <code>suppliers</code></td><td><code>ops.elevatetech.biz</code></td></tr>
+  </table>
+
+  <h2>The two repos, one difference each</h2>
+  <table>
+    <tr><th></th><th>ElevateTech</th><th>OPS App</th></tr>
+    <tr><td>Draft PRs</td><td>Full checks run on every draft push</td><td>Fast affected checks on drafts; full suite at Ready</td></tr>
+    <tr><td>Who promotes</td><td>Wade</td><td>Nicholas</td></tr>
+  </table>
+
+  <h2>Hotfixes</h2>
+  <div class="note">There is deliberately <b>no shortcut to staging or production</b>. A hotfix is the same loop at speed: branch → PR (skip the preview label) → Ready → gates → merge → staging re-certifies (~30–40 min). For a production incident, promote the <b>last certified</b> SHA — the promote button physically refuses anything uncertified, including rollbacks to known-good releases, which are always available.</div>
+
+  <footer>Reflects the live pipeline. If this page disagrees with what CI does, CI wins — then fix this page.</footer>
+</main>
+</body>
+</html>
